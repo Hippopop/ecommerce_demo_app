@@ -13,6 +13,7 @@ dependencies:
   get: ^4.6.6
   google_fonts: ^6.2.1
   hugeicons: ^0.0.7
+  smooth_page_indicator: ^1.2.0+3
 
 dev_dependencies:
   flutter_test:
@@ -21,3 +22,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/pngs/
