@@ -1,6 +1,7 @@
 import 'package:ecommerce_demo_app/src/constants/assets.dart';
 import 'package:ecommerce_demo_app/src/constants/colors.dart';
 import 'package:ecommerce_demo_app/src/constants/paddings.dart';
+import 'package:ecommerce_demo_app/src/features/product_list_page/views/product_list_page.dart';
 import 'package:ecommerce_demo_app/src/services/theme/app_theme.dart';
 import 'package:ecommerce_demo_app/utilities/extensions/size_utilities.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,28 @@ class ElasticChoiceTitle extends StatelessWidget {
           ),
           const Spacer(),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(
+                PageRouteBuilder(
+                  transitionDuration: Durations.medium1,
+                  pageBuilder: (context, animation, _) =>
+                      const ProductListPage(),
+                  transitionsBuilder: (context, animation, _, child) =>
+                      FadeTransition(
+                    opacity: animation,
+                    child: SlideTransition(
+                      position: animation.drive(
+                        Tween(
+                          begin: const Offset(0.9, 0),
+                          end: Offset.zero,
+                        ),
+                      ),
+                      child: child,
+                    ),
+                  ),
+                ),
+              );
+            },
             customBorder: const StadiumBorder(),
             child: Padding(
               padding: const EdgeInsets.all(8.0),

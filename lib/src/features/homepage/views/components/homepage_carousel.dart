@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:ecommerce_demo_app/src/constants/assets.dart';
 import 'package:ecommerce_demo_app/src/constants/colors.dart';
 import 'package:ecommerce_demo_app/src/constants/paddings.dart';
 import 'package:ecommerce_demo_app/src/services/theme/app_theme.dart';
@@ -18,10 +19,10 @@ class HomepageCarousel extends StatefulWidget {
 class _HomepageCarouselState extends State<HomepageCarousel> {
   int _currentPageIndex = 0;
   final _carouselImageList = [
-    "https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAzfHxwcm9kdWN0fGVufDB8fDB8fHww",
-    "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-    "https://images.unsplash.com/photo-1654399781659-5b369f891f40?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjk4fHxwdXJwbGUlMjBwcm9kdWN0fGVufDB8fDB8fHww",
-    "https://images.unsplash.com/photo-1582313550743-e07900d5105c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxwdXJwbGUlMjBwcm9kdWN0fGVufDB8fDB8fHww",
+    ImageAssets.carouselTwo,
+    ImageAssets.carouselOne,
+    ImageAssets.carouselThree,
+    ImageAssets.carouselFour,
   ];
 
   @override
@@ -100,7 +101,7 @@ class CarouselItem extends StatelessWidget {
           clipBehavior: Clip.hardEdge,
           children: [
             SizedBox.expand(
-              child: Image.network(
+              child: Image.asset(
                 imageLink,
                 fit: BoxFit.cover,
               ),

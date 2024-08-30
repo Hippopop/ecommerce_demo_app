@@ -122,7 +122,7 @@ class DropAnimationWidget extends StatelessWidget {
     return DefaultTextStyle(
       style: context.theme.textTheme.bodyMedium!,
       child: DecoratedBox(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: backgroundColor,
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(24),
@@ -206,7 +206,7 @@ class DropAnimationWidget extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                              Icon(
+                              const Icon(
                                 HugeIcons.strokeRoundedChampion,
                                 size: 20,
                                 color: Colors.amber,

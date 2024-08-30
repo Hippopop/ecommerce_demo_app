@@ -1,6 +1,7 @@
 import 'package:ecommerce_demo_app/src/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 ///[BuildContext] extensions for [Theme] Utilities!
 extension ThemeGetter on BuildContext {
@@ -35,6 +36,10 @@ final appTheme = ThemeData.dark(useMaterial3: false).copyWith(
         fontWeight: FontWeight.w500,
       ),
     ),
+  ),
+  actionIconTheme: ActionIconThemeData(
+    backButtonIconBuilder: (context) =>
+        const Icon(HugeIcons.strokeRoundedArrowLeft01),
   ),
   iconTheme: const IconThemeData(size: 32, color: textColor),
   outlinedButtonTheme: OutlinedButtonThemeData(
