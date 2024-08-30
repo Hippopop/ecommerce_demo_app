@@ -25,6 +25,7 @@ final appTheme = ThemeData.dark(useMaterial3: false).copyWith(
   ),
   textTheme: GoogleFonts.interTextTheme(
     const TextTheme(
+      bodySmall: TextStyle(fontSize: 10),
       titleMedium: TextStyle(
         color: textColor,
         fontWeight: FontWeight.w500,
