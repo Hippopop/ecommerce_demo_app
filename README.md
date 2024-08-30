@@ -10,5 +10,5 @@ Here is some example of how the simple 2 page app looks (*taken from Pixel 7 Pro
 | :---------------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
 |  <img width="300" alt="Screenshot One" src="./screenshots/Screenshot_1.png">  | <img width="300" alt="Screenshot Two" src="./screenshots/Screenshot_2.png">  |
 | <img width="300" alt="Screenshot Three" src="./screenshots/Screenshot_3.png"> | <img width="300" alt="Screenshot Four" src="./screenshots/Screenshot_4.png"> |
-| <img width="300" alt="Screenshot Five" src="./screenshots/Screenshot_5.png">  |
+| <img width="300" alt="Screenshot Five" src="./screenshots/Screenshot_5.png">  |                             <p> Thank You!💙 </p>                             |
 
